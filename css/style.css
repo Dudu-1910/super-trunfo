@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 854px;
+  background-image: url("https://i.pinimg.com/originals/8b/33/8f/8b338f9c73dc4c8b71a73325696b24cc.gif");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 3em;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+button,
+.button-jogar {
+  padding: 0.8rem 1.5rem;
+  margin: 1rem 0;
+  background: rgba(19, 14, 14, 0.3);
+  border-radius: 5px;
+  border: none;
+  font-size: 1.3rem;
+  border: 3px solid white;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+button:hover{
+  background: black;
+  color: white;
+  border: 3px solid white;
+}
+
+h2 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2.5em;
+  color: white;
+}
+
+#carta-jogador,
+#carta-maquina {
+  width: 360px;
+  height: 500px;
+  overflow: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  background-size: 350px 300px;
+  background-repeat: no-repeat;
+  background-position-x: 5px;
+  background-position-y: 10px;
+  border-radius: 33px;
+}
+
+#carta-jogador h3 {
+  text-align: center;
+}
+
+.carta-imagem {
+  border: 1px solid black;
+  height: 100px;
+  margin: 10px;
+}
+
+.carta-imagem img {
+  width: 100%;
+  height: 100%;
+}
+
+.carta-status {
+  height: 160px;
+  color: white;
+  margin: 2rem;
+  text-align: left;
+  z-index: 2;
+}
+
+.carta-status input {
+  margin: 5px 10px;
+}
+
+.span-carta-maquina {
+  line-height: 23px;
+  text-align: left;
+  margin: 1rem;
+}
+
+.resultado-final {
+  font-family: 'Shadows Into Light', cursive;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 1rem;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.--spacing {
+  margin-left: 2.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.carta-subtitle {
+  z-index: 2;
+  position: absolute;
+  top: 17px;
+  left: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+#cartas {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carta-status p {
+  margin-bottom: 2rem;
+}
+
+footer {
+  background: rgba(19, 14, 14, 0.3);
+  display: block;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.p-footer {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 200;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}

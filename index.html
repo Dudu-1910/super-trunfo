@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Super Trunfo - Carros Clássicos</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-title">Super Trunfo</h1>
+    <button onclick="sortearCarta()" id="btn-sortear">Sortear carta</button>
+    <form id="form">
+      <h2>Escolha o seu atributo</h2>
+      <div class="wrapper">
+        <div>
+          <div id="carta-jogador">
+            <img src="img/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">
+            <h3></h3>
+          </div>
+        </div>
+        <div>
+          <div id="carta-maquina" class="carta">
+            <img src="img/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">
+          </div>
+        </div>
+      </div>
+      <button class="button-jogar" type="button" id="btn-jogar" onclick="jogar()" disabled="false">Jogar</button>
+      <button class="reiniciar" type="button" onclick="window.location.reload()">reiniciar</button>
+      <div id="resultado"></div>
+    </form>
+
+  </div>
+  
+  <div id="footer">
+    <footer class="rodape">
+      <p class="p-footer">Todos os direitos reservados</p>
+      <p class="p-footer">Desenvolvido por Eduardo Henrique &copy; || 2022</p>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
